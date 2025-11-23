@@ -10,10 +10,11 @@
     <!-- Criação do menu da landing page-->
      <header>
         <nav class="nav-menu">
+            <img src="img/logo.png" alt="logo do site" >
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre</a></li>
-                <li><a href="">Orçamento</a></li>
+                <li><a href="">Agendamento</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
         </nav>
@@ -23,50 +24,100 @@
       <main>
         <!-- BANNER-->
          <section class="banner">
-            <img src="" alt="">BANNER DO SITE
+            <img src="img/banner.jpg" alt="">
          </section>
 
          <!--Inforamções sobre a clinica-->
-         <section class="sobre">
-            <h2>Quem somos</h2>
-            <p> 
-                A VitaMais Saúde nasceu com o propósito de oferecer um atendimento humanizado, moderno e completo, colocando o paciente no centro de cada decisão. Somos uma clínica dedicada ao cuidado integral da saúde, reunindo profissionais altamente qualificados nas áreas de Neurologia, Ginecologia, Endocrinologia e Nutrição.
-            </p>
-            <p>
-                Nosso compromisso é promover qualidade de vida por meio de um atendimento personalizado, ético e acolhedor, sempre aliado às melhores práticas da medicina e às tecnologias mais atuais. Acreditamos que cada pessoa é única, por isso trabalhamos de forma integrada, unindo especialidades que se complementam para proporcionar diagnósticos precisos e tratamentos eficazes.
-            </p>
-            <p>
-                Na VitaMais Saúde, você encontra um ambiente seguro, confortável e preparado para acompanhar cada etapa do seu cuidado. Nossa missão é cuidar da sua saúde com excelência, confiança e respeito, ajudando você a viver mais e melhor.
-            </p>
-            <h3>VitaMais Saúde — Cuidar bem é viver bem.</h3>
+         <section class="section-sobre">
+            <h1>Quem somos?</h1>
+            <div class="section-container">
+                <div class="text-section">
+                    <p> 
+                        A VitaMais Saúde nasceu com o propósito de oferecer um atendimento humanizado, moderno e completo, colocando o paciente no centro de cada decisão. Somos uma clínica dedicada ao cuidado integral da saúde, reunindo profissionais altamente qualificados nas áreas de Neurologia, Ginecologia, Endocrinologia e Nutrição.
+                    </p>
+                    <p>
+                        Acreditamos que cada pessoa é única, por isso trabalhamos de forma integrada, unindo especialidades que se complementam para proporcionar diagnósticos precisos e tratamentos eficazes.
+                    </p>
+                    </p>
+                </div>
+                <div class="section-text2">
+                    <p>
+                        Nosso compromisso é promover qualidade de vida por meio de um atendimento personalizado, ético e acolhedor, sempre aliado às melhores práticas da medicina e às tecnologias mais atuais. 
+                    <p>
+                        Na VitaMais Saúde, você encontra um ambiente seguro, confortável e preparado para acompanhar cada etapa do seu cuidado. Nossa missão é cuidar da sua saúde com  excelência, confiança e respeito, ajudando você a viver  mais e melhor.
+                    </p>
+                </div>
+            </div>
+                <h2 class="title-text">VitaMais Saúde — Cuidar bem é viver bem.</h2>
+            
          </section>
          <!--Serviços-->
          <section class="servicos">
-            <h2>Principais atendimentos - SP</h2>
+            <h2 class="title-servicos">Principais atendimentos - SP</h2>
 
             <div class="grid">
+                <!-- Seção Neurologista-->
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="img/logos/logo-neurologista.png" alt="logo Neurologia">
                     <p class="text-grid">Neurologista</p>
                 </div>
+                <!-- Seção Ginecologista-->
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="img/logos/logo-ginecologista.png" alt="logo Ginecologista">
                     <p class="text-grid">Ginecologista</p>
                 </div>
-                <div class="grid">
-                    <img src="" alt="">
+                <!--Seção Endocrinologia-->
+                <div class="item">
+                    <img src="img/logos/logo-endocrinologista.png" alt="logo Endocrinologia">
                     <p class="text-grid">Endocrinologia</p>
                 </div>
+                <!--Seção Nutricionista-->
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="img/logos/logo-nutricionista.png" alt="logo Nutricionista">
                     <p class="text-grid">Nutricionista</p>
                 </div>
             </div>
          </section>
          <!-- Formulário-->
           <section class="section-form">
-            <form action="/" method="post"></form>
+            <h3>Agendamento</h3>
+                <form action="/enviar" method="post">
+                    <label for="nome" class="label-text">Digite seu nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+                    <label for="email" class="label-text">Digite seu email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                    <label for="telefone" class="label-text">telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    <!-- Seção de lista-->
+                    <label for="servicos" class="label-text">Escolha o serviço:</label>
+                        <select name="servicos" id="servicos">
+                            <option value="">Selecione ...</option>
+                            <option value="Ginecologia">Ginecologia</option>
+                            <option value="Neurologista">Neurologista</option>
+                            <option value="Endocrinologia">Endocrinologia</option>
+                            <option value="Nutricionista">Nutricionista</option>
+                        </select>
+                    <label for="campo-texto" class="label-text">Informação</label>
+                        <textarea name="campo-texto" id="campo-texto" placeholder="Digite o dia, horário e informação detalhada."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
           </section>
         </main>
+
+        <!-- Rodaé do site-->
+         <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-info">
+                        <h3>VitaMais Saúde</h3>
+                        <p class="text-footer">Cuidado humano e moderno para sua saúde.</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Redes Sociais</h3>
+                        <a href="#">Instagram</a>
+                        <a href="#">Whatssap</a>
+                    </div>
+                </div>
+                <p class="copy"> &copy; 2025 VitaMais Saúde - Todos os direitos reservados.</p>
+         </footer>       
 </body>
 </html>
